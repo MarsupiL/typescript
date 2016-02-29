@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TypeScript User Interface</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="ts/app.js"></script> -->
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="row" id="header">
+      <h1>
+        <img src="img/zivver_logo.png" alt="logo" id="logo" align="middle">
+        User interface
+      </h1>
+    </div>
+
+    <!-- FORM -->
+    <div class="container" data-ng-controller="MyController">
+      <div class="row">
+        <form class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="UUID identifier" required>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email address</label>
+            <input type="email" class="form-control" id="Email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <label for="FirstName">First name</label>
+            <input type="text" class="form-control" id="FirstName" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label for="LastName">Last name</label>
+            <input type="text" class="form-control" id="LastName" placeholder="Last name" required>
+          </div>
+          <div class="form-group">
+            <label for="PhoneNumber">Phone number</label>
+            <input type="tel" class="form-control" id="PhoneNumber" placeholder="Phone number">
+          </div>
+          <div class="form-group">
+            <label for="Picture">Picture</label>
+            <input type="url" class="form-control" id="Picture" placeholder="Picture">
+          </div>
+          <button type="submit" class="btn btn-primary">Validate</button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

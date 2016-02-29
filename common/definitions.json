@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json­schema.org/draft­04/schema#",
+  "id": "http://schemas.zivver.org/common/definitions.json",
+  "description": "Common type definitions for ZIVVER json schemas",
+  "type": "object",
+  "properties" : {
+    "emailaddress" : {
+      "title": "EmailAddress",
+      "description": "This is a definition for an email type",
+      "type": "string",
+      "pattern": "^[a­zA­Z0­9_.+­]+@[a­zA­Z0­9­]+\\.[a­zA­Z0­9­.]+$",
+      "format": "email",
+      "maxLength": 255
+    },
+    "identifier" : {
+      "title": "Identifier",
+      "description" : "A UUID identifying string (8­4­4­4­12)",
+      "type": "string",
+      "format": "uuid"
+    },
+    "phonenumber" : {
+      "title" : "Phone number",
+      "description" : "A telephone number",
+      "example" : "+31 6 43 25 79 97",
+      "type": "string",
+      "format": "phone",
+      "maxLength": 255
+    }
+  }
+}
